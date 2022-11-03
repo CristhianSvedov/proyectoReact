@@ -1,9 +1,12 @@
 import React from 'react'
 import './ItemListContainer.css'
 
-const ItemListContainer = () => {
+const ItemListContainer = (props) => {
+    console.log(props)
   return (
-    <div>ItemListContainer</div>
+    <div className='message-greeting-container'>
+        <h2 className='message'>{props.name}</h2>
+    </div>
   )
 }
 
